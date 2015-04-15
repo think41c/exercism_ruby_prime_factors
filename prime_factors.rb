@@ -9,7 +9,6 @@ class PrimeFactors
       until divisor > factor
       # UNLESS should end as soon as divisor is >= the 1/2 size of factor.
         if factor % divisor == 0 
-          p "It's divisible!"
           result << divisor 
           factor = factor / divisor
         else
@@ -20,4 +19,4 @@ class PrimeFactors
     end 
   end
 end
-p PrimeFactors.for(9)
+p PrimeFactors.for(3)
